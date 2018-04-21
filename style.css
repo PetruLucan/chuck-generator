@@ -1,0 +1,256 @@
+
+* {
+    font-family: 'BioRhyme Expanded', serif;
+}
+
+.jokeBackground{
+  color: white;
+  background-color: rgba(102, 98, 98, 0.76);
+  padding: 10px 20px;
+  width: 80%;
+  text-align: center;
+  border-radius: 12px;
+}
+
+footer{
+  
+    white-space: nowrap;
+    overflow: auto;
+    border-top: 4px dotted black;
+}
+
+ul{
+  display: inline-block;
+}
+
+footer img {
+  height: 200px;
+  box-shadow: 0px 0px 5px #000000;
+  margin: 10px 5px;
+  transition: transform 0.5s;
+}
+
+.hidden {
+  display: none !important;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
+.btn {
+  background-color: white;
+  border: 2px solid #044389;
+  color: black;
+}
+
+#saveBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#jokeBtn {
+  margin:10px; 
+}
+
+#firstPage{
+  text-align: center;
+}
+
+.bkgPhoto p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.btn:hover {
+  background-color: #044389;
+  color: white;
+  cursor: pointer;
+}
+#footerLoading {
+  vertical-align: top;
+  background-color: black;
+  margin: 80px 30px 20px 30px;
+  width: 60px;
+  height: 60px;
+  
+}
+/* Background Photos */
+
+.bkgPhoto {
+  position: relative;
+  /* top: 20%; */
+  left: 30%; 
+  width: 600px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  margin: 40px 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Center titles */
+
+.titleCenter {
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Cube - Loading animation*/
+header{
+    position: relative;
+    background-color: #044389;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+
+header p{
+    margin: 0;
+}
+
+#menu{
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    /* transform: translate(-50%); */
+}
+
+/* Cube - Loading */
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+    
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: white;
+  float: left;
+
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube3 {
+  animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube4 {
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube5 {
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube6 {
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube7 {
+  animation-delay: 0s;
+}
+.sk-cube-grid .sk-cube8 {
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube9 {
+  animation-delay: 0.2s;
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+/*hamburger menu*/
+#menu {
+    width: 60px;
+    height: 45px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #menu span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 50%;
+    background: white;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  #menu span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 9px 9px 0;
+  }
+  
+  #menu span:nth-child(odd) {
+    left:0px;
+    border-radius: 9px 0 0 9px;
+  }
+  
+  #menu span:nth-child(1), #menu span:nth-child(2) {
+    top: 0px;
+  }
+  
+  #menu span:nth-child(3), #menu span:nth-child(4) {
+    top: 18px;
+  }
+  
+  #menu span:nth-child(5), #menu span:nth-child(6) {
+    top: 36px;
+  }
+  
+  #menu.open span:nth-child(1),#menu.open span:nth-child(6) {
+    transform: rotate(45deg);
+  }
+  
+  #menu.open span:nth-child(2),#menu.open span:nth-child(5) {
+    transform: rotate(-45deg);
+  }
+  
+  #menu.open span:nth-child(1) {
+    left: 5px;
+    top: 7px;
+  }
+  
+  #menu.open span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 7px;
+  }
+  
+  #menu.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+  }
+  
+  #menu.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+  }
+  
+  #menu.open span:nth-child(5) {
+    left: 5px;
+    top: 29px;
+  }
+  
+  #menu.open span:nth-child(6) {
+    left: calc(50% - 5px);
+    top: 29px;
+  }
