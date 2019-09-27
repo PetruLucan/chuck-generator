@@ -10,4 +10,4 @@ The app uses two external API's:
 
 which, together with **LocalStorage** (for storing the saved memes), DOM access and Responsive Design make for an app idea which is great if you're looking for something useful and fun! 😉
 
-❤  -- [Live Demo](https://iampava.github.io/chuck-generator/) -- ❤
+❤  -- [Live Demo](https://petrulucan.github.io/chuck-generator/) -- ❤
